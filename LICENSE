@@ -1,0 +1,50 @@
+Pre-Open Source Verification License (POSVL)
+
+This license applies before the software is released as open source by the copyright holder. The purpose of this license is to verify, in collaboration with the users, the technical and legal compliance of the software with various open source licenses to be used once the software is made open source. During the verification period, the software may only be used, redistributed, or modified for non-commercial purposes, such as technical or legal verification, research, or education. The Open Source AI Association shall bear no liability, under any circumstances, for any form of damages that may arise from the use of this license by the user or any third party, including but not limited to direct, indirect, special, incidental, consequential damages, or loss of profits arising from the use of this license, related transactions, or matters pertaining to the license.
+
+1. Definitions:
+1.1 The Software, etc.: Refers to the source code and related documents provided under this license.
+
+1.2 Binary/Object Files: Refers to executable or intermediate files compiled from the source code of the software.
+1.3 Use: Refers to acts such as acquiring, displaying, executing, combining, redistributing, or modifying copies of the software or Binary/Object Files.
+1.4 Redistribution: Refers to the act of providing the Software, etc., to a third party.
+1.5 Modification: Refers to any modification, addition, or alteration made to the Software, etc., or Binary/Object Files.
+1.6 Non-commercial: Not intended for commercial profit or monetary compensation, and not primarily directed towards those objectives.
+
+1.7 Successor License: Refers to the license that will be applied to the Software, etc., after the technical and legal compliance verification is complete.
+1.8 Licensor: Refers to the copyright holder or a third party with legitimate authorization, who has the authority to grant permission for the use, redistribution, or modification of the Software, etc., under this license.
+
+
+2. User Consent:
+By using, modifying, or redistributing the Software, etc., the user is deemed to have agreed to all the terms and conditions of this license.
+If the user does not agree to the terms of this license, they are not permitted to use, modify, or redistribute the Software, etc.
+
+3. License Grant and Conditions of Utilization:
+3.1 License Grant:
+Users are permitted to use the Software, etc., under the following conditions:
+
+a. For Non-commercial purposes related to technical or legal verification.
+b. For Non-commercial educational purposes.
+3.2 License Conditions of Utilization:
+a. Redistribution is permitted only for Non-commercial educational purposes. When redistributing, the terms of this license shall be inherited and clearly stated to be observed.
+b. When redistributing binaries or object files, it is necessary to provide the corresponding source code or specify the method for obtaining it.
+
+
+4. Derivative Works:
+If the user modifies the Software, etc., the user agrees to grant the Licensor a non-revocable, royalty-free license to utilize the modifications, including rights related to intellectual property, without limitation of time or territory. The Licensor has the right to re-license or otherwise utilize these modifications freely, and the user agrees not to exercise any rights that may remain under applicable laws (including moral rights) against the Licensor or any third party authorized by the Licensor.
+
+5. Successor License:
+Upon completion of the verification of technical and legal compliance, the Software, etc., will be licensed under the successor license as designated below.
+
+Apache License Version 2.0
+
+6. End Date of Public Verification Period for Technical and Legal Integrity:
+The end date of the public verification period is set as stated below. However, depending on the status of the public verification, this end date may be extended by mutual agreement. If the original author wishes to extend, but the user does not agree, this license will terminate, and no transition to the successor license will occur.
+Filling Section:
+2025 / 03 / 31
+
+7. Measures for License Violation:
+If the user violates any terms of this license, their rights under this license will automatically terminate. The user shall immediately cease using, modifying, or redistributing the Software, etc. The Licensor reserves the right to take legal action and claim damages caused by the violation.
+
+8. Limitation of Warranty and Liability:
+The Software, etc., is provided "as is", without any warranty of any kind, whether express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement. Under no circumstances shall the original author or contributors be held liable for any special, direct, indirect, incidental, or consequential damages or losses arising from the use of the Software, etc., or related transactions.

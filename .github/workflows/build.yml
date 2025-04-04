@@ -1,0 +1,52 @@
+name: build
+on:
+  push:
+    branches:
+      - main
+      - develop
+  pull_request:
+    branches:
+      - main
+      - develop
+jobs:
+  build-on-linux:
+    runs-on: ubuntu-24.04
+    strategy:
+      matrix:
+        clang_version: [18, 20]
+    steps:
+      - name: checkout 
+        uses: actions/checkout@v4
+      - name: Install clang
+        run: |
+          sudo apt-get -y update && sudo apt-get -y install curl gnupg
+          curl -fsSL https://apt.llvm.org/llvm-snapshot.gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/llvm.gpg
+          sudo echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/llvm.gpg] http://apt.llvm.org/jammy/ llvm-toolchain-jammy main" | sudo tee /etc/apt/sources.list.d/llvm.list > /dev/null
+          sudo apt-get -y update
+          sudo apt-get -y install clang-${{ matrix.clang_version }} clang-format-${{ matrix.clang_version }} clang-tidy-${{ matrix.node }}
+      - name: Install dependencies
+        run: |
+          sudo apt-get -y update
+          sudo apt-get -y install libeigen3-dev libceres-dev libspdlog-dev libopencv-dev nlohmann-json3-dev
+      - name: build
+        run: |
+          CC=clang-${{ matrix.clang_version }} CXX=clang++-${{ matrix.clang_version }} cmake -Bcmake-build-release -H. \
+            -Dbundlefit_BUILD_DEMO=ON
+          cd cmake-build-release
+          make -j
+  build-on-mac-os:
+    runs-on: macos-latest
+    steps:
+      - name: checkout 
+        uses: actions/checkout@v4
+      - name: Install clang
+        run: |
+          brew install llvm
+      - name: Install dependencies
+        run: |
+          brew update
+          brew install eigen ceres-solver spdlog opencv nlohmann-json
+      - name: build
+        run: |
+          CC=/opt/homebrew/opt/llvm/bin/clang CXX=/opt/homebrew/opt/llvm/bin/clang++ cmake -Bcmake-build-release -H. \
+            -Dbundlefit_BUILD_DEMO=ON

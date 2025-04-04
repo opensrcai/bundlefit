@@ -1,0 +1,23 @@
+{
+  "name": "bundlefit",
+  "version": "0.0.1",
+  "dependencies": [
+    {
+      "name": "eigen3",
+      "version>=": "3.4.0"
+    },
+    "spdlog",
+    {
+      "name": "ceres",
+      "version>=": "2.2.0",
+      "features": [
+        "eigensparse"
+      ]
+    },
+    {
+      "name": "opencv4",
+      "version>=": "4.7.0"
+    }
+  ],
+  "builtin-baseline": "1e9cf6939df1d0b9c1f71505a0e54fd9f4b35d2d"
+}

@@ -1,0 +1,25 @@
+---
+BasedOnStyle: Google
+AccessModifierOffset: -2
+AlignConsecutiveAssignments: true
+AlignTrailingComments: true
+BreakBeforeBraces: Custom
+BraceWrapping:
+  BeforeElse: true
+BreakBeforeBinaryOperators: All
+IndentWidth: 2
+Standard: Cpp11
+TabWidth: 2
+UseTab: Never
+ColumnLimit: 80
+DerivePointerAlignment: false
+PointerAlignment: Left
+ReferenceAlignment: Left
+
+# Prevent one-line constructor initialization
+BreakConstructorInitializers: BeforeComma
+ConstructorInitializerAllOnOneLineOrOnePerLine: false
+# PackConstructorInitializers: Never <- for clang-format 14
+
+AllowShortEnumsOnASingleLine: false
+SpacesBeforeTrailingComments: 1

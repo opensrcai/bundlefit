@@ -1,0 +1,53 @@
+build/
+devel/
+lib/
+!viewer/public/js/lib/
+.idea/
+cmake-build-*/
+*/.python-version
+*.user
+.DS_Store
+.vscode/
+.venv
+/example_py/notebooks/G-PCD
+/example_py/notebooks/G-PCD.zip
+.ipynb_checkpoints
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+.python-version
+compile_commands.json
+/.cache
+
+/vcpkg
