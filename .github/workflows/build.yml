@@ -23,7 +23,7 @@ jobs:
           curl -fsSL https://apt.llvm.org/llvm-snapshot.gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/llvm.gpg
           sudo echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/llvm.gpg] http://apt.llvm.org/jammy/ llvm-toolchain-jammy main" | sudo tee /etc/apt/sources.list.d/llvm.list > /dev/null
           sudo apt-get -y update
-          sudo apt-get -y install clang-${{ matrix.clang_version }} clang-format-${{ matrix.clang_version }} clang-tidy-${{ matrix.node }}
+          sudo apt-get -y install clang-${{ matrix.clang_version }} clang-format-${{ matrix.clang_version }} clang-tidy-${{ matrix.clang_version }}
       - name: Install dependencies
         run: |
           sudo apt-get -y update
