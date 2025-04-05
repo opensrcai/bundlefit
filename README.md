@@ -13,7 +13,7 @@ Bundle Fitting Library for 3D Reconstruction
 
 ## Prerequirements
 + Eigen
-+ ceres-solver
++ Ceres Solver
 + OpenCV (if you build demo)
 + nanobind (for Python binding)
 
@@ -144,6 +144,16 @@ python
 
 Please refer to the Colab example for how to use BundleFit from Python.  
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/opensrcai/bundlefit/blob/main/example_py/notebooks/bundle_adjustment.ipynb)
+
+## Acknowledgments
+
+This project is made possible by the following open-source projects:
+
+|Project name| License | Functionality |
+| :--- | :--- | :--- |
+| [Eigen3](https://gitlab.com/libeigen/eigen)| Mozilla Public License 2.0 | Linear Algebra Library |
+| [Ceres Solver](https://github.com/ceres-solver/ceres-solver)| The 3-Clause BSD License | Library for Non-linear Least Squares problems |
+| [OpenCV](https://github.com/opencv/opencv)| Apache License, Version 2.0 | P3P solver |
 
 ## LICENSE
 
