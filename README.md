@@ -14,7 +14,6 @@ Bundle Fitting Library for 3D Reconstruction
 ## Prerequirements
 + Eigen
 + ceres-solver
-+ spdlog
 + OpenCV (if you build demo)
 + nanobind (for Python binding)
 
@@ -31,14 +30,14 @@ Please install dependency.
 Please execute the following command in the terminal.
 ```bash
 brew update
-brew install eigen ceres-solver spdlog opencv
+brew install eigen ceres-solver opencv
 ```
 
 ### Ubuntu
 Please execute the following command in the terminal.
 ```bash
 sudo apt update
-sudo apt install libeigen3-dev libceres-dev libspdlog-dev libopencv-dev
+sudo apt install libeigen3-dev libceres-dev libopencv-dev
 ```
 
 ### Build from source

@@ -28,7 +28,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get -y update
-          sudo apt-get -y install libeigen3-dev libceres-dev libspdlog-dev libopencv-dev nlohmann-json3-dev
+          sudo apt-get -y install libeigen3-dev libceres-dev libopencv-dev nlohmann-json3-dev
       - name: build
         run: |
           CC=clang-${{ matrix.clang_version }} CXX=clang++-${{ matrix.clang_version }} cmake -Bcmake-build-release -H. \
@@ -46,7 +46,7 @@ jobs:
       - name: Install dependencies
         run: |
           brew update
-          brew install eigen ceres-solver spdlog opencv nlohmann-json
+          brew install eigen ceres-solver opencv nlohmann-json
       - name: build
         run: |
           CC=/opt/homebrew/opt/llvm/bin/clang CXX=/opt/homebrew/opt/llvm/bin/clang++ cmake -Bcmake-build-release -H. \

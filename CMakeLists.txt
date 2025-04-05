@@ -2,7 +2,6 @@ cmake_minimum_required(VERSION 3.20)
 project(bundlefit)
 
 find_package(Eigen3 3.4 REQUIRED NO_MODULE)
-find_package(spdlog REQUIRED)
 find_package(Ceres REQUIRED)
 
 # -- library type
@@ -58,10 +57,6 @@ target_include_directories(${PROJECT_NAME}
 target_include_directories(${PROJECT_NAME}
         PRIVATE
         ${PROJECT_SOURCE_DIR}/src)
-
-target_link_libraries(${PROJECT_NAME}
-        PRIVATE
-        spdlog::spdlog)
 
 target_link_libraries(${PROJECT_NAME}
         PUBLIC

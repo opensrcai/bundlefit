@@ -6,7 +6,6 @@
       "name": "eigen3",
       "version>=": "3.4.0"
     },
-    "spdlog",
     {
       "name": "ceres",
       "version>=": "2.2.0",
