@@ -158,6 +158,6 @@ This project is made possible by the following open-source projects:
 ## LICENSE
 
 Copyright © 2024 Mikiya Shibuya, Kai Okawa.  
-Released under the [Pre-Open Source Verification License](https://opensrcai.org/posvl/posvl-2/).  
+Released under the [Apache License Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).  
 
 Please see the [LICENSE](LICENSE) file for details.
