@@ -1,7 +1,10 @@
 cmake_minimum_required(VERSION 3.20)
 project(bundlefit)
 
-find_package(Eigen3 3.4 REQUIRED NO_MODULE)
+find_package(Eigen3 REQUIRED NO_MODULE)
+if(Eigen3_VERSION VERSION_LESS 3.4)
+  message(FATAL_ERROR "Eigen >= 3.4 is required")
+endif()
 find_package(Ceres REQUIRED)
 
 # -- library type
