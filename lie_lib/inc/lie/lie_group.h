@@ -1,6 +1,7 @@
 #ifndef LIE_TYPES_H
 #define LIE_TYPES_H
 
+#include <assert.h>
 #include <lie/lie_3d.h>
 
 namespace lie {
