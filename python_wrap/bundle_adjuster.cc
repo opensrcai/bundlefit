@@ -181,6 +181,11 @@ public:
     return BundleAdjuster::reject_outlier_residuals(outlier_indices);
   }
 
+  void reject_outlier_landmarks(std::vector<ResidualReport>* outlier_indices
+                                = nullptr) {
+    BundleAdjuster::reject_outlier_landmarks(outlier_indices);
+  }
+
   std::map<int, int> evaluate_error(const int bins_inlier = 10) const {
     return BundleAdjuster::evaluate_error(bins_inlier);
   }
@@ -251,6 +256,9 @@ void WrapBundleAdjuster(nanobind::module_& module) {
            &BundleAdjusterPython::estimate_landmark_covariance)
       .def("reject_outlier_residuals",
            &BundleAdjusterPython::reject_outlier_residuals,
+           "outlier_indices"_a = nullptr)
+      .def("reject_outlier_landmarks",
+           &BundleAdjusterPython::reject_outlier_landmarks,
            "outlier_indices"_a = nullptr)
       .def("evaluate_error", &BundleAdjusterPython::evaluate_error,
            "bins_inlier"_a = 10);
